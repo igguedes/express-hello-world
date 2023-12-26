@@ -69,7 +69,7 @@ function normalizarDadosContrato(item, array){
     
         array.push({
             categoria: item.categoria_nome,
-            endereco:  item.endereco_contrato.logradouro + ', ' + item.endereco_contrato.numero + ', ' + item.endereco_contrato.nome + ', ' + item.endereco_contrato.cep + ', ' + (item.endereco_contrato.ponto_referencia_1 || '') + ', ' + (item.endereco_contrato.ponto_referencia2 || ''),
+            endereco:  item.endereco_contrato.logradouro + ', ' + item.endereco_contrato.numero + ', ' + item.endereco_contrato.nome + ', ' + item.endereco_contrato.bairro + ', ' + item.endereco_contrato.cep + ', ' + (item.endereco_contrato.ponto_referencia_1 || '') + ', ' + (item.endereco_contrato.ponto_referencia2 || ''),
             plano_principal: item.planos.filter(function(plano){
                 if(plano.principal && !plano.cancelado) return plano;
             }).map(item => item.nome),
