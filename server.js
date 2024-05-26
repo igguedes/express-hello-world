@@ -11,7 +11,7 @@ const TELEGRAM_TOKEN='7484081454:AAFd7X9ThG2FQGB6rNAA1MCQI9H5xt1jCYs';
 const SERVER_URL='https://teste-igor-express.onrender.com';
 
 const structProtoToJson =
-    require('../proto_to_json.js').structProtoToJson;
+    require('./proto_to_json.js').structProtoToJson;
 
 const express = require('express');
 const axios = require('axios');
